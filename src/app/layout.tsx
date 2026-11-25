@@ -1,20 +1,21 @@
-import { Space_Grotesk, DM_Sans } from "next/font/google";
+import { Fraunces, Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
-import { ThemeProvider } from "next-themes";
-import ScrollToTop from "@/components/ScrollToTop";
-import Aoscompo from "@/utils/aos";
+import "./home.css";
 import type { Metadata } from "next";
-import { asset } from "@/lib/asset";
 
-const display = Space_Grotesk({
+const display = Fraunces({
   subsets: ["latin"],
   variable: "--font-display",
 });
-const body = DM_Sans({
+
+const body = Outfit({
   subsets: ["latin"],
   variable: "--font-body",
+});
+
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | HELIX TECH",
   },
   description:
-    "HELIX TECH Ltd — Colorado AI technology company building intelligent products and digital infrastructure.",
+    "HELIX TECH Ltd is a placeholder software company. Company details will be updated.",
 };
 
 export default function RootLayout({
@@ -31,32 +32,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cssVars = `
-    :root {
-      --background-image-start: url('${asset("/images/work/bg-start.svg")}');
-      --background-image-perk: url('${asset("/images/perks/perk-bg.png")}');
-    }
-  `;
-
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body
-        className={`${body.variable} ${display.variable} ${body.className} bg-background text-white`}
-      >
-        <style dangerouslySetInnerHTML={{ __html: cssVars }} />
-        <ThemeProvider
-          attribute="class"
-          enableSystem={false}
-          forcedTheme="dark"
-          defaultTheme="dark"
-        >
-          <Aoscompo>
-            <Header />
-            {children}
-            <Footer />
-          </Aoscompo>
-          <ScrollToTop />
-        </ThemeProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${display.variable} ${body.variable} ${mono.variable}`}>
+        {children}
       </body>
     </html>
   );

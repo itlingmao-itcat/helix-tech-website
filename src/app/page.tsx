@@ -1,48 +1,82 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HELIX TECH Ltd",
+  title: "Global Equity Capital Ltd",
   description:
-    "HELIX TECH Ltd is a placeholder software company. Details will be updated.",
+    "Global Equity Capital Ltd is a Colorado corporation building practical software and digital systems for partners.",
 };
 
 const practice = [
   {
     index: "01",
     title: "Product engineering",
-    copy: "Web products and internal tools, taken from a rough brief to something a team can run.",
+    copy: "Web products and internal tools, taken from a clear brief to something a team can run.",
   },
   {
     index: "02",
     title: "Automation",
-    copy: "Repeatable workflows that take busywork off the team.",
+    copy: "Repeatable workflows that take busywork off the operating team.",
   },
   {
     index: "03",
     title: "Analytics",
-    copy: "A small set of numbers people actually use.",
+    copy: "A small set of numbers people actually use to run the work.",
   },
   {
     index: "04",
-    title: "Care",
-    copy: "Fixes and improvements after the first release.",
+    title: "Ongoing care",
+    copy: "Fixes and improvements after the first release, with plain updates.",
   },
 ];
 
 const steps = [
-  ["01", "Listen", "What has to be true when the work is done."],
-  ["02", "Shape", "A short plan, a narrow scope, and the risks in plain language."],
-  ["03", "Make", "Working software in small releases, not a long silent build."],
-  ["04", "Stay", "Support after launch. The placeholder team note will be replaced."],
+  [
+    "01",
+    "Listen",
+    "Confirm what has to be true when the engagement is done.",
+  ],
+  [
+    "02",
+    "Shape",
+    "A short plan, a narrow scope, and the risks in plain language.",
+  ],
+  [
+    "03",
+    "Make",
+    "Working software in small releases, not a long silent build.",
+  ],
+  [
+    "04",
+    "Stay",
+    "Support after launch, with the same people who shipped the work.",
+  ],
 ];
 
 const notes = [
-  ["What is HELIX TECH Ltd?", "A placeholder name for a software company. The real company details will be filled in later."],
-  ["Where is it based?", "Written as a Colorado company for now. Confirm this before it is treated as a fact."],
-  ["What do you build?", "Business software: products, internal tools, automation, and the reporting around them."],
-  ["Who leads it?", "Leadership is not listed yet. This line is a placeholder."],
-  ["Is this a trading or card service?", "No. The company is for ordinary software work."],
-  ["How do we reach you?", "Contact details will be added with the company update."],
+  [
+    "What is Global Equity Capital Ltd?",
+    "A Colorado corporation formed to pursue lawful business, focused here on practical software and digital systems for partners.",
+  ],
+  [
+    "Where is the company formed?",
+    "Under Colorado law. The principal office is at 1312 17th Street, Suite 600, Denver, CO 80202. Colorado entity ID 20258017166.",
+  ],
+  [
+    "When was it formed?",
+    "Articles of Incorporation were filed on September 16, 2025. The company is in good standing with the Colorado Secretary of State.",
+  ],
+  [
+    "Who leads the company?",
+    "Laura Valerie Melville serves as Director, and as President, Secretary, and Treasurer on the officer record dated September 16, 2025.",
+  ],
+  [
+    "How is the company governed?",
+    "Corporate Bylaws were adopted at the first meeting of incorporators on September 16, 2025. The Board of Directors manages the affairs of the corporation.",
+  ],
+  [
+    "Is this a trading desk or card service?",
+    "No. This site presents a technology company. It is not a cryptocurrency, Web3, or card-issuing service.",
+  ],
 ];
 
 export default function Home() {
@@ -50,62 +84,63 @@ export default function Home() {
     <div className="hx">
       <div className="hx-wrap">
         <div className="hx-top">
-          <span>HX-00 · Placeholder record</span>
-          <span>Software company · draft</span>
+          <span>GEC · Colorado corporation</span>
+          <span>Entity 20258017166 · formed Sep 16, 2025</span>
         </div>
 
         <header className="hx-nav">
           <a className="hx-brand" href="#top">
-            <strong>Helix</strong>
-            <span>Technology practice</span>
+            <strong>Global Equity Capital</strong>
+            <span>Technology practice · Denver</span>
           </a>
           <nav className="hx-links" aria-label="Page">
             <a href="#practice">Practice</a>
             <a href="#method">Method</a>
+            <a href="#company">Company</a>
             <a href="#notes">Notes</a>
           </nav>
         </header>
 
         <section className="hx-hero" id="top">
           <div className="hx-rise">
-            <p className="hx-kicker">01 — Studio draft</p>
+            <p className="hx-kicker">01 — Company</p>
             <h1>
               Software with
               <br />
-              a <em>clear shape.</em>
+              a <em>clear record.</em>
             </h1>
             <p className="hx-lede">
-              HELIX TECH Ltd is a temporary company page. It describes a small
-              software practice. Names, people, and legal details will be
-              replaced.
+              Global Equity Capital Ltd is a Colorado corporation building
+              practical software and digital systems—secure delivery, plain
+              communication, and formal governance behind the work.
             </p>
             <div className="hx-actions">
               <a className="hx-btn" href="#practice">
                 See the practice
               </a>
-              <a className="hx-textlink" href="#notes">
-                Read the notes
+              <a className="hx-textlink" href="#company">
+                Company record
               </a>
             </div>
           </div>
 
-          <aside className="hx-sheet hx-rise hx-d2" aria-label="Company draft">
-            <h2>Draft record</h2>
+          <aside className="hx-sheet hx-rise hx-d2" aria-label="Company record">
+            <h2>Public record</h2>
             <div className="hx-row">
               <span>Name</span>
-              <strong>HELIX TECH Ltd</strong>
+              <strong>Global Equity Capital Ltd.</strong>
             </div>
             <div className="hx-row">
-              <span>Work</span>
-              <strong>Business software</strong>
+              <span>Formed</span>
+              <strong>September 16, 2025</strong>
             </div>
             <div className="hx-row">
-              <span>Base</span>
-              <strong>Colorado, for now</strong>
+              <span>Office</span>
+              <strong>Denver, Colorado</strong>
             </div>
             <div className="hx-row">
-              <span>Status</span>
-              <strong>Replace tomorrow</strong>
+              <span>Director</span>
+              <strong>Laura Valerie Melville</strong>
             </div>
           </aside>
         </section>
@@ -114,20 +149,20 @@ export default function Home() {
       <div className="hx-wrap">
         <div className="hx-band" aria-label="At a glance">
           <div>
+            <small>Jurisdiction</small>
+            <strong>Colorado</strong>
+          </div>
+          <div>
+            <small>Standing</small>
+            <strong>Good</strong>
+          </div>
+          <div>
+            <small>Bylaws</small>
+            <strong>Adopted</strong>
+          </div>
+          <div>
             <small>Focus</small>
-            <strong>Tools</strong>
-          </div>
-          <div>
-            <small>Pace</small>
-            <strong>Small</strong>
-          </div>
-          <div>
-            <small>Style</small>
-            <strong>Plain</strong>
-          </div>
-          <div>
-            <small>Record</small>
-            <strong>Draft</strong>
+            <strong>Software</strong>
           </div>
         </div>
 
@@ -165,8 +200,38 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="hx-section" id="company">
+          <p className="hx-kicker">04 — Company</p>
+          <h2>Facts from the corporate record.</h2>
+          <div className="hx-notes">
+            <article className="hx-note">
+              <h3>Legal name</h3>
+              <p>Global Equity Capital Ltd., a Colorado profit corporation.</p>
+            </article>
+            <article className="hx-note">
+              <h3>Principal office</h3>
+              <p>1312 17th Street, Suite 600, Denver, CO 80202, United States.</p>
+            </article>
+            <article className="hx-note">
+              <h3>Formation</h3>
+              <p>
+                Articles filed with the Colorado Secretary of State on September
+                16, 2025. Entity ID 20258017166. Certificate of Good Standing on
+                file.
+              </p>
+            </article>
+            <article className="hx-note">
+              <h3>Leadership</h3>
+              <p>
+                Laura Valerie Melville — Director; President; Secretary;
+                Treasurer. Bylaws adopted September 16, 2025.
+              </p>
+            </article>
+          </div>
+        </section>
+
         <section className="hx-section" id="notes">
-          <p className="hx-kicker">04 — Notes</p>
+          <p className="hx-kicker">05 — Notes</p>
           <h2>Open answers, not a hidden list.</h2>
           <div className="hx-notes">
             {notes.map(([question, answer]) => (
@@ -179,8 +244,11 @@ export default function Home() {
         </section>
 
         <footer className="hx-foot">
-          <span>HELIX TECH Ltd · placeholder copy</span>
-          <span>Colorado draft · not a card or trading service</span>
+          <span>
+            © {new Date().getFullYear()} Global Equity Capital Ltd. All rights
+            reserved.
+          </span>
+          <span>Denver, Colorado · not a card or trading service</span>
         </footer>
       </div>
     </div>

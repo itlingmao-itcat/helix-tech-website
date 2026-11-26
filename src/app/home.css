@@ -64,9 +64,10 @@
 .hx-brand strong {
   font-family: var(--font-display), serif;
   font-weight: 520;
-  font-size: 28px;
+  font-size: clamp(20px, 2.4vw, 28px);
   letter-spacing: -0.03em;
-  line-height: 1;
+  line-height: 1.05;
+  max-width: 14ch;
 }
 
 .hx-brand span {

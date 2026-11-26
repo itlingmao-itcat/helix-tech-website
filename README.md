@@ -1,12 +1,13 @@
-# HELIX TECH Ltd — Company Website
+# Global Equity Capital Ltd — Company Website
 
-Official marketing site for **HELIX TECH Ltd**, adapted from the open-source [Crypgo](https://github.com/shadcnspace/crypgo-shadcn-ui-landingpage) Next.js landing template.
+Marketing site for **Global Equity Capital Ltd.**, a Colorado corporation.
+
+Live site: https://itlingmao-itcat.github.io/helix-tech-website/
 
 ## Stack
 
 - Next.js (App Router) + TypeScript
-- Tailwind CSS + shadcn/ui
-- Framer Motion
+- Static export for GitHub Pages
 
 ## Develop
 
@@ -15,11 +16,16 @@ pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
-
 ## Company facts used on the site
 
-Placeholder copy for now. Legal name, leadership, and company details will be replaced.
+Drawn from the corporate filing packet (Articles, Bylaws, minutes, good standing):
 
-- Working name: HELIX TECH Ltd
-- Positioning: a simple technology company building software products
+- Legal name: Global Equity Capital Ltd.
+- Jurisdiction: Colorado, USA
+- Entity ID: 20258017166
+- Formed: September 16, 2025
+- Principal office: 1312 17th Street, Suite 600, Denver, CO 80202
+- Director / President / Secretary / Treasurer: Laura Valerie Melville
+- Bylaws adopted: September 16, 2025
+
+EIN, passport numbers, and share certificates are not published on the site.

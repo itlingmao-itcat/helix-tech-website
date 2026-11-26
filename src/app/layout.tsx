@@ -20,11 +20,11 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "HELIX TECH Ltd",
-    template: "%s | HELIX TECH",
+    default: "Global Equity Capital Ltd",
+    template: "%s | Global Equity Capital",
   },
   description:
-    "HELIX TECH Ltd is a placeholder software company. Company details will be updated.",
+    "Global Equity Capital Ltd is a Colorado corporation building practical software and digital systems for partners.",
 };
 
 export default function RootLayout({
